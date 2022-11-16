@@ -1,5 +1,3 @@
-This project is a practice project for me to learn ts-vue3 with [XiaoMan](https://space.bilibili.com/99210573).Thanks to vue team members for their efforts and Xiao Man's guidance, you have inspired my interest in learning programming.
-
 vue3官网，[点击跳转](https://cn.vuejs.org/)
 ## 目录介绍
 
