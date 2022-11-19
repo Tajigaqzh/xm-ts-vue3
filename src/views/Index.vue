@@ -1,7 +1,9 @@
 <template>
   <div class="links">
     <router-link to="/directive">指令</router-link>
-    <router-link to="set">set</router-link>
+    <router-link to="/virtual">virtual</router-link>
+    <router-link to="/ref">ref</router-link>
+    <router-link to="/reactive">reactive</router-link>
   </div>
 </template>
 <script setup lang="ts"></script>

@@ -1,6 +1,8 @@
 <template>
   directive
+  <br>
   {{ message }}
+<br>
   {{ num ? "a" : "b" }}
 <!-- // 如何加样式
 // 1.绑定对象

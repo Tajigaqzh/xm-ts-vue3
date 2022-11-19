@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory, Router } from "vue-router";
+import { createRouter, createWebHistory, Router, RouteRecordRaw } from "vue-router";
 
-const routes: Array<any> = [
+const routes: Array<RouteRecordRaw> = [
 	{
 		path: "/",
 		component: () => import("../views/Index.vue"),
@@ -9,7 +9,12 @@ const routes: Array<any> = [
 		path: "/directive",
 		component: () => import("../components/Directive.vue"),
 	},
-	{},
+	{
+		path: "/virtual",
+		component: () => import("../components/VirtualDom.vue"),
+	},
+	{ path: "/ref", component: () => import("../components/Ref.vue") },
+	{path:"/reactive",component:()=>import("../components/Reactive.vue")}
 ];
 
 const router: Router = createRouter({

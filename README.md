@@ -42,5 +42,7 @@ v-else-if
 v-for
 ### tips
 v-if和v-show区别一个是是否渲染，一个是控制css的display属性是否为none
-
+v-if开销大
 修饰符 Modifiers
+
+ref,torefs,
