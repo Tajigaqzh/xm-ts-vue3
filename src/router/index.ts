@@ -1,20 +1,17 @@
-import { createRouter, createWebHistory, Router, RouteRecordRaw } from "vue-router";
+import {
+	createRouter,
+	createWebHistory,
+	Router,
+	RouteRecordRaw,
+} from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
-	{
-		path: "/",
-		component: () => import("../views/Index.vue"),
-	},
-	{
-		path: "/directive",
-		component: () => import("../components/Directive.vue"),
-	},
-	{
-		path: "/virtual",
-		component: () => import("../components/VirtualDom.vue"),
-	},
+	{ path: "/", component: () => import("../views/Index.vue") },
+	{ path: "/directive", component: () => import("../components/Directive.vue") },
+	{ path: "/virtual", component: () => import("../components/VirtualDom.vue") },
 	{ path: "/ref", component: () => import("../components/Ref.vue") },
-	{path:"/reactive",component:()=>import("../components/Reactive.vue")}
+	{ path: "/reactive", component: () => import("../components/Reactive.vue") },
+	{ path: "/computed", component: () => import("../components/Computed.vue") },
 ];
 
 const router: Router = createRouter({

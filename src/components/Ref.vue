@@ -8,8 +8,11 @@
   <button @click="getDom">獲取dom内容</button>
 </template>
 <script setup lang="ts">
-import { ref, isRef, shallowRef, customRef, onMounted } from "vue";
+import { ref, isRef, shallowRef, customRef, onMounted,toRaw } from "vue";
 import type { Ref } from "vue";
+
+// isref用来判断是不是一个ref对象,源码中用的比较多
+// toRaw把一个响应式对象变成不是响应式的
 type Man = {
   name: string;
 };
@@ -21,6 +24,7 @@ const man1 = ref<Man>({ name: "zs" });
 // shallowRef浅层次响应
 //
 
+
 const man2: Ref<Man> = shallowRef({ name: "lss" });
 const change = () => {
   man2.value.name = "ssss";
@@ -28,7 +32,7 @@ const change = () => {
 };
 // shallowref中不要使用ref，因为ref会调用公用方法triggerRef,shallowRef也会被影响
 
-// 自定義ref可以實現防抖
+// 自定義ref可以实现防抖
 function MyRef<T>(value: T) {
   return customRef((track, trigger) => {
     return {

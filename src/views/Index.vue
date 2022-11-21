@@ -4,6 +4,7 @@
     <router-link to="/virtual">virtual</router-link>
     <router-link to="/ref">ref</router-link>
     <router-link to="/reactive">reactive</router-link>
+    <router-link to="/computed">computed</router-link>
   </div>
 </template>
 <script setup lang="ts"></script>
