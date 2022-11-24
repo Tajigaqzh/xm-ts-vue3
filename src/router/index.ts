@@ -23,9 +23,16 @@ const routes: Array<RouteRecordRaw> = [
 	},
 	{ path: "/less", component: () => import("../components/LessScoped.vue") },
 	{ path: "/layout", component: () => import("../layout/index.vue") },
-	{ path: "/passParam", component: () => import("../components/passParams/Father.vue") },
+	{
+		path: "/passParam",
+		component: () => import("../components/passParams/Father.vue"),
+	},
 	{ path: "/card", component: () => import("../components/card/Card.vue") },
 	{ path: "/tree", component: () => import("../components/TreeTest.vue") },
+	{
+		path: "/dynamic",
+		component: () => import("../components/dynamicComponent/index.vue"),
+	},
 ];
 
 const router: Router = createRouter({
