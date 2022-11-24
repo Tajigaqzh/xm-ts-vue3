@@ -24,7 +24,6 @@
   </table>
 </template>
 <script setup lang="ts">
-import { computed, ref, reactive } from "vue";
 let firstName = ref("张");
 let lastName = ref("三");
 // computed属性为只读

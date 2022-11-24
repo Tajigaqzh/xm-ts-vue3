@@ -3,17 +3,6 @@
   <button @click="change">修改</button>
 </template>
 <script setup lang="ts">
-import {
-  ref,
-  onBeforeMount,
-  onMounted,
-  onBeforeUpdate,
-  onUpdated,
-  onBeforeUnmount,
-  onUnmounted,
-  nextTick,
-  getCurrentInstance
-} from "vue";
 //组件生命周期
 
 // 组合式api是没有created，beforeCreate

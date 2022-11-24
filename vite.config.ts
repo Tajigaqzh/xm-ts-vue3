@@ -6,7 +6,9 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		autoImport({
-			imports:['vue','vue-router']
+			imports:['vue','vue-router'],
+			dts:"src/auto-import.d.ts"
+	
 		})
 	],
 });

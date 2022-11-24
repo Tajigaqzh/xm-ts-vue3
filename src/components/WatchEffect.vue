@@ -8,7 +8,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import { watchEffect, ref } from "vue";
 let message = ref<string>("aaa");
 let message2 = ref<string>("bbb");
 const stop = watchEffect((onA) => {

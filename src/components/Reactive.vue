@@ -19,7 +19,6 @@
   {{objshallow.cla.claName}}
 </template>
 <script setup lang="ts">
-import { ref, reactive , readonly,shallowReactive} from "vue";
 // ref支持所有類型，reactive支持引用類型 Array，Object，Map，Set
 // ref取值和賦值都需要.value，reactive不需要
 // reactive proxy不能直接賦值，否則會失去響應式

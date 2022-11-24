@@ -9,9 +9,9 @@
 </template>
 
 <script lang="ts" setup>
-// watch侦听，只有响应式对象才能被侦听
-import { ref, reactive, Ref, watch } from "vue";
+import { Ref } from 'vue';
 
+// watch侦听，只有响应式对象才能被侦听
 let message: Ref<string> = ref<string>("hello");
 let message2 = ref("aaaa");
 

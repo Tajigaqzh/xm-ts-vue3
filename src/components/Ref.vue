@@ -8,7 +8,7 @@
   <button @click="getDom">獲取dom内容</button>
 </template>
 <script setup lang="ts">
-import { ref, isRef, shallowRef, customRef, onMounted,toRaw } from "vue";
+
 import type { Ref } from "vue";
 
 // isref用来判断是不是一个ref对象,源码中用的比较多
