@@ -6,7 +6,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { TreeType } from "../datatype/index";
+import { TreeType } from "../../types/index";
 defineProps<{ data?: TreeType[] }>();
 const clickTap = (item: TreeType, event: Event) => {
   console.log(item);

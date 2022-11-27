@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
 	{ path: "/virtual", component: () => import("../components/VirtualDom.vue") },
 	{ path: "/ref", component: () => import("../components/Ref.vue") },
 	{ path: "/reactive", component: () => import("../components/Reactive.vue") },
-	{ path: "/computed", component: () => import("../components/Computed.vue") },
+	{ path: "/computed", component: () => import("../components/ComputedDemo.vue") },
 	{ path: "/watch", component: () => import("../components/Watch.vue") },
 	{
 		path: "/watchEffect",
@@ -28,11 +28,22 @@ const routes: Array<RouteRecordRaw> = [
 		component: () => import("../components/passParams/Father.vue"),
 	},
 	{ path: "/card", component: () => import("../components/card/Card.vue") },
-	{ path: "/tree", component: () => import("../components/TreeTest.vue") },
+	{ path: "/tree", component: () => import("../components/tree/TreeTest.vue") },
 	{
 		path: "/dynamic",
 		component: () => import("../components/dynamicComponent/index.vue"),
 	},
+	{ path: "/slot", component: () => import("../components/slotTest/index.vue") },
+	{
+		path: "/dialog",
+		component: () => import("../components/teleportDemo/index.vue"),
+	},
+	{path:"/async",component:()=>import('../components/asyncComponent/index.vue')},
+	{path:"/cache",component:()=>import('../components/cacheComponent/index.vue')},
+	{path:"/transition",component:()=>import("../components/transition/index.vue")},
+	{path:"/provider",component:()=>import('../components/provider/index.vue')},
+	{path:"/emit",component:()=>import('../components/emitTest/index.vue')},
+	{path:"/tsx",component:()=>import('../components/tsx/index.vue')},
 ];
 
 const router: Router = createRouter({

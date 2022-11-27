@@ -1,13 +1,18 @@
-import App from './App.vue'
-import router from './router'
-import './assets/reset.css'
-import Card from './components/card/Card.vue'
+import App from "./App.vue";
+import router from "./router";
+import "./assets/reset.css";
+import Card from "./components/card/Card.vue";
+import "element-plus/dist/index.css";
 
-const app = createApp(App)
-const pinia = createPinia()
+import mitt from "mitt";
+const Mit = mitt();
+const app = createApp(App);
 
-app.component('Card',Card)
+const pinia = createPinia();
+app.config.globalProperties.$bus = Mit;
+
+app.component("Card", Card);
 // 全局组件注册
-app.use(router)
-app.use(pinia)
-app.mount('#app')
+app.use(router);
+app.use(pinia);
+app.mount("#app");
