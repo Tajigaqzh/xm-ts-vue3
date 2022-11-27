@@ -75,6 +75,18 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/dragDirective",
 		component: () => import("../components/defineDirective/index3.vue"),
 	},
+	{
+		path: "/hooks",
+		component: () => import("../components/hooks/index.vue"),
+	},
+	{
+		path: "/globalFunVa",
+		component: () => import("../components/globalFunctionVariety/index.vue"),
+	},
+	{
+		path: "/vuePlugin",
+		component: () => import("../components/vuePlugin/index.vue"),
+	},
 ];
 
 const router: Router = createRouter({

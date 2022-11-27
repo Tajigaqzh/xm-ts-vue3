@@ -27,6 +27,9 @@ r<template>
     <router-link to="/customerDirective">自定义指令</router-link>
     <router-link to="/directiveSnip">自定义指令（简写）</router-link>
     <router-link to="/dragDirective">自定义拖拽指令</router-link>
+    <router-link to="/hooks">自定义hooks</router-link>
+    <router-link to="/globalFunVa">全局函数全局变量</router-link>
+    <router-link to="/vuePlugin">vuePlugin</router-link>
   </div>
 </template>
 <script setup lang="ts"></script>
