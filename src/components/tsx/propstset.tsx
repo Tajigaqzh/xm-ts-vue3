@@ -1,10 +1,6 @@
- 
-import { ref } from 'vue'
- 
 type Props = {
     title?:string
 }
- 
 const renderDom = (props:Props) => {
     return (
         <>
@@ -13,5 +9,4 @@ const renderDom = (props:Props) => {
         </>
     )
 }
- 
 export default renderDom

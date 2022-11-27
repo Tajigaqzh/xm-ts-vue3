@@ -11,7 +11,10 @@ const routes: Array<RouteRecordRaw> = [
 	{ path: "/virtual", component: () => import("../components/VirtualDom.vue") },
 	{ path: "/ref", component: () => import("../components/Ref.vue") },
 	{ path: "/reactive", component: () => import("../components/Reactive.vue") },
-	{ path: "/computed", component: () => import("../components/ComputedDemo.vue") },
+	{
+		path: "/computed",
+		component: () => import("../components/ComputedDemo.vue"),
+	},
 	{ path: "/watch", component: () => import("../components/Watch.vue") },
 	{
 		path: "/watchEffect",
@@ -38,12 +41,40 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/dialog",
 		component: () => import("../components/teleportDemo/index.vue"),
 	},
-	{path:"/async",component:()=>import('../components/asyncComponent/index.vue')},
-	{path:"/cache",component:()=>import('../components/cacheComponent/index.vue')},
-	{path:"/transition",component:()=>import("../components/transition/index.vue")},
-	{path:"/provider",component:()=>import('../components/provider/index.vue')},
-	{path:"/emit",component:()=>import('../components/emitTest/index.vue')},
-	{path:"/tsx",component:()=>import('../components/tsx/index.vue')},
+	{
+		path: "/async",
+		component: () => import("../components/asyncComponent/index.vue"),
+	},
+	{
+		path: "/cache",
+		component: () => import("../components/cacheComponent/index.vue"),
+	},
+	{
+		path: "/transition",
+		component: () => import("../components/transition/index.vue"),
+	},
+	{
+		path: "/provider",
+		component: () => import("../components/provider/index.vue"),
+	},
+	{ path: "/emit", component: () => import("../components/emitTest/index.vue") },
+	{ path: "/tsx", component: () => import("../components/tsx/index.vue") },
+	{
+		path: "/componentmodel",
+		component: () => import("../components/compomentModel/index.vue"),
+	},
+	{
+		path: "/customerDirective",
+		component: () => import("../components/defineDirective/index.vue"),
+	},
+	{
+		path: "/directiveSnip",
+		component: () => import("../components/defineDirective/index2.vue"),
+	},
+	{
+		path: "/dragDirective",
+		component: () => import("../components/defineDirective/index3.vue"),
+	},
 ];
 
 const router: Router = createRouter({

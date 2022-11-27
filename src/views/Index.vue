@@ -23,6 +23,10 @@ r<template>
     <router-link to="/provider">provide和inject</router-link>
     <router-link to="/emit">emit和mitt</router-link>
     <router-link to="/tsx">tsx</router-link>
+    <router-link to="/componentmodel">component与v-model</router-link>
+    <router-link to="/customerDirective">自定义指令</router-link>
+    <router-link to="/directiveSnip">自定义指令（简写）</router-link>
+    <router-link to="/dragDirective">自定义拖拽指令</router-link>
   </div>
 </template>
 <script setup lang="ts"></script>
