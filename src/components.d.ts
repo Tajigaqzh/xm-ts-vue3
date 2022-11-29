@@ -65,6 +65,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     SlotTest: typeof import('./components/slotTest/index.vue')['default']
     Son: typeof import('./components/passParams/Son.vue')['default']
+    Taiwind: typeof import('./components/taiwind/index.vue')['default']
     TeleportDemo: typeof import('./components/teleportDemo/index.vue')['default']
     TransGroupTest: typeof import('./components/transition/TransGroupTest.vue')['default']
     Transition: typeof import('./components/transition/index.vue')['default']

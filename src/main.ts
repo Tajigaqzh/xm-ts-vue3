@@ -5,6 +5,8 @@ import Card from "./components/card/Card.vue";
 import "element-plus/dist/index.css";
 import Loading from "./components/vuePlugin/Loading";
 import mitt from "mitt";
+import "./index.css"
+
 const Mit = mitt();
 const app = createApp(App);
 

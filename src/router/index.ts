@@ -91,6 +91,10 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/element",
 		component: () => import("../components/elementUIcssProblem/index.vue"),
 	},
+	{
+		path: "/taiwind",
+		component: () => import("../components/taiwind/index.vue"),
+	},
 ];
 
 const router: Router = createRouter({
