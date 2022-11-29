@@ -15,19 +15,19 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/computed",
 		component: () => import("../components/ComputedDemo.vue"),
 	},
-	{ path: "/watch", component: () => import("../components/Watch.vue") },
+	{ path: "/mywatch", component: () => import("../components/Watch.vue") },
 	{
 		path: "/watchEffect",
 		component: () => import("../components/WatchEffect.vue"),
 	},
 	{
-		path: "/lifeTime",
+		path: "/lifetime",
 		component: () => import("../components/ComponentLifetime.vue"),
 	},
 	{ path: "/less", component: () => import("../components/LessScoped.vue") },
 	{ path: "/layout", component: () => import("../layout/index.vue") },
 	{
-		path: "/passParam",
+		path: "/passparam",
 		component: () => import("../components/passParams/Father.vue"),
 	},
 	{ path: "/card", component: () => import("../components/card/Card.vue") },
@@ -64,15 +64,15 @@ const routes: Array<RouteRecordRaw> = [
 		component: () => import("../components/compomentModel/index.vue"),
 	},
 	{
-		path: "/customerDirective",
+		path: "/customerdirective",
 		component: () => import("../components/defineDirective/index.vue"),
 	},
 	{
-		path: "/directiveSnip",
+		path: "/directivesnip",
 		component: () => import("../components/defineDirective/index2.vue"),
 	},
 	{
-		path: "/dragDirective",
+		path: "/dragdirective",
 		component: () => import("../components/defineDirective/index3.vue"),
 	},
 	{
@@ -80,12 +80,16 @@ const routes: Array<RouteRecordRaw> = [
 		component: () => import("../components/hooks/index.vue"),
 	},
 	{
-		path: "/globalFunVa",
+		path: "/globalfunva",
 		component: () => import("../components/globalFunctionVariety/index.vue"),
 	},
 	{
-		path: "/vuePlugin",
+		path: "/vueplugin",
 		component: () => import("../components/vuePlugin/index.vue"),
+	},
+	{
+		path: "/element",
+		component: () => import("../components/elementUIcssProblem/index.vue"),
 	},
 ];
 

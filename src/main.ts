@@ -3,7 +3,7 @@ import router from "./router";
 import "./assets/reset.css";
 import Card from "./components/card/Card.vue";
 import "element-plus/dist/index.css";
-
+import Loading from "./components/vuePlugin/Loading";
 import mitt from "mitt";
 const Mit = mitt();
 const app = createApp(App);
@@ -19,8 +19,13 @@ app.config.globalProperties.$filters = {
 	},
 };
 
-app.component("Card", Card);
+
 // 全局组件注册
+app.component("Card", Card);
+// 使用插件
 app.use(router);
 app.use(pinia);
+// 使用自定义插件Loading
+app.use(Loading);
+
 app.mount("#app");

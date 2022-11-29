@@ -5,14 +5,14 @@ r<template>
     <router-link to="/ref">ref</router-link>
     <router-link to="/reactive">reactive</router-link>
     <router-link to="/computed">computed</router-link>
-    <router-link to="/watch">watch</router-link>
+    <router-link to="/mywatch">watch--</router-link>
     <router-link to="/watchEffect">watchEffect</router-link>
-    <router-link to="/lifeTime">组件生命周期</router-link>
+    <router-link to="/lifetime">组件生命周期</router-link>
     <router-link to="/less">less and scoped</router-link>
     <router-link to="/layout">layout</router-link>
 
     <router-link to="/async">异步组件</router-link>
-    <router-link to="/passParam">父子组件传参与瀑布流</router-link>
+    <router-link to="/passparam">父子组件传参与瀑布流</router-link>
     <router-link to="/card">全局组件、局部组件</router-link>
     <router-link to="/tree">组件的递归嵌套(递归组件处理事件时会有冒泡，可用stop阻止)</router-link>
     <router-link to="/dynamic">动态切换组件</router-link>
@@ -24,12 +24,13 @@ r<template>
     <router-link to="/emit">emit和mitt</router-link>
     <router-link to="/tsx">tsx</router-link>
     <router-link to="/componentmodel">component与v-model</router-link>
-    <router-link to="/customerDirective">自定义指令</router-link>
-    <router-link to="/directiveSnip">自定义指令（简写）</router-link>
-    <router-link to="/dragDirective">自定义拖拽指令</router-link>
+    <router-link to="/customerdirective">自定义指令</router-link>
+    <router-link to="/directivesnip">自定义指令（简写）</router-link>
+    <router-link to="/dragdirective">自定义拖拽指令</router-link>
     <router-link to="/hooks">自定义hooks</router-link>
-    <router-link to="/globalFunVa">全局函数全局变量</router-link>
-    <router-link to="/vuePlugin">vuePlugin</router-link>
+    <router-link to="/globalfunva">全局函数全局变量</router-link>
+    <router-link to="/vueplugin">vuePlugin</router-link>
+    <router-link to="/element">elementUI的css样式问题、slot插槽样式选择器</router-link>
   </div>
 </template>
 <script setup lang="ts"></script>

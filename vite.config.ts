@@ -3,15 +3,20 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
+import ElementPlus from 'unplugin-element-plus/vite'
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
+		ElementPlus(),
+		// 自动按需导入样式，下面的两个autoimport和Components
+		// 会自动导入component等，但是样式会很久才有
 		vue(),
 		vueJsx(),
 		AutoImport({
+			// dirs:['./src/types'],
 			resolvers: [
 				ElementPlusResolver(),
 				IconsResolver({
@@ -19,6 +24,7 @@ export default defineConfig({
 				}),
 			],
 			dts: "src/auto-imports.d.ts",
+			// dts:false,
 			include: [
 				/\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
 				/\.vue$/,
@@ -41,7 +47,7 @@ export default defineConfig({
 					enabledCollections: ["ep"],
 				}),
 			],
-			
+			// dts:false
 			dts: "src/components.d.ts",
 		}),
 		Icons({
